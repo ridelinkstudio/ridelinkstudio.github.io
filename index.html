@@ -278,25 +278,26 @@
         }
 
         .step {
-            position: relative;
-            padding-top: 68px;
-        }
+    position: relative;
+    padding-top: 78px;
+}
 
-        .step::before {
-            counter-increment: step;
-            content: counter(step);
-            position: absolute;
-            top: 22px;
-            left: 27px;
-            width: 32px;
-            height: 32px;
-            display: grid;
-            place-items: center;
-            border-radius: 50%;
-            background: var(--teal);
-            color: var(--navy);
-            font-weight: 800;
-        }
+.step::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    top: 20px;
+    left: 27px;
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--teal);
+    color: var(--navy);
+    font-weight: 800;
+    z-index: 1;
+}
 
         .feature-list {
             list-style: none;
