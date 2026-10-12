@@ -1,241 +1,1042 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RideLink - Your Transport Business, Connected</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="RideLink helps drivers and businesses build a professional online presence and connect directly with customers.">
+    <title>RideLink | Digital Business Pages for Drivers and Small Businesses</title>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4164152174250595"
-     crossorigin="anonymous"></script>
-    
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+    <meta name="description" content="RideLink helps drivers, entrepreneurs and small businesses build professional online pages, showcase their services and connect directly with customers.">
 
-body{
-    background:#071a2b;
-    color:white;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-}
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#071a2b">
 
-.container{
-    width:100%;
-    max-width:800px;
-    padding:40px 25px;
-}
+    <link rel="canonical" href="https://ridelinkstudio.github.io/">
 
-.logo{
-    font-size:42px;
-    font-weight:bold;
-    color:#20d6c7;
-    margin-bottom:15px;
-}
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4164152174250595"
+        crossorigin="anonymous"></script>
 
-h1{
-    font-size:2.4rem;
-    margin-bottom:15px;
-}
+    <style>
+        :root {
+            --navy: #071a2b;
+            --navy-light: #0c263b;
+            --teal: #20d6c7;
+            --teal-dark: #13b9ac;
+            --white: #ffffff;
+            --muted: #c4d3dc;
+            --border: rgba(32, 214, 199, 0.22);
+            --surface: rgba(255, 255, 255, 0.045);
+            --max-width: 1120px;
+        }
 
-p{
-    color:#d8e5e8;
-    font-size:1.1rem;
-    line-height:1.7;
-    margin-bottom:25px;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.btn{
-    display:inline-block;
-    background:#20d6c7;
-    color:#071a2b;
-    text-decoration:none;
-    font-weight:bold;
-    padding:15px 30px;
-    border-radius:30px;
-    margin:8px;
-    transition:0.3s;
-}
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 85px;
+        }
 
-.btn:hover{
-    transform:translateY(-2px);
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--navy);
+            color: var(--white);
+            line-height: 1.7;
+        }
 
-.secondary{
-    background:transparent;
-    color:#20d6c7;
-    border:1px solid #20d6c7;
-}
+        a {
+            color: var(--teal);
+        }
 
-footer{
-    margin-top:45px;
-    color:#8fa5ad;
-    font-size:0.9rem;
-}
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid var(--white);
+            outline-offset: 4px;
+        }
 
-footer a{
-    color:#20d6c7;
-    text-decoration:none;
-}
+        .container {
+            width: min(100% - 36px, var(--max-width));
+            margin-inline: auto;
+        }
 
-@media(max-width:600px){
-    h1{
-        font-size:1.9rem;
-    }
+        .site-header {
+            background: rgba(7, 26, 43, 0.97);
+            border-bottom: 1px solid var(--border);
+        }
 
-    .logo{
-        font-size:34px;
-    }
-}
-</style>
+        .nav {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding-block: 14px;
+        }
+
+        .brand {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--teal);
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            font-size: 0.92rem;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover,
+        footer a:hover {
+            color: var(--teal);
+        }
+
+        .hero {
+            padding: 90px 0 80px;
+            text-align: center;
+            background:
+                radial-gradient(
+                    ellipse at top,
+                    rgba(32, 214, 199, 0.10),
+                    transparent 65%
+                );
+        }
+
+        .eyebrow {
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: clamp(2.3rem, 6vw, 4.2rem);
+            line-height: 1.13;
+            letter-spacing: -1.8px;
+            max-width: 850px;
+            margin: 0 auto 24px;
+        }
+
+        h1 span {
+            color: var(--teal);
+        }
+
+        .hero-text {
+            max-width: 760px;
+            margin: 0 auto 30px;
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 12px 23px;
+            border: 1px solid var(--teal);
+            border-radius: 8px;
+            background: var(--teal);
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 700;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #6aeee4;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--teal);
+        }
+
+        .btn-outline:hover {
+            background: rgba(32, 214, 199, 0.09);
+        }
+
+        .section {
+            padding: 72px 0;
+        }
+
+        .section-alt {
+            background: var(--navy-light);
+        }
+
+        .section-heading {
+            max-width: 760px;
+            margin: 0 auto 38px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            line-height: 1.25;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            color: var(--white);
+        }
+
+        .section-heading p,
+        .section-intro {
+            color: var(--muted);
+        }
+
+        .content {
+            max-width: 850px;
+            margin-inline: auto;
+        }
+
+        .content p {
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .three-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .card {
+            padding: 27px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 13px;
+        }
+
+        .card p {
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 17px;
+            border-radius: 10px;
+            background: rgba(32, 214, 199, 0.12);
+            color: var(--teal);
+            font-size: 1.35rem;
+            font-weight: 700;
+        }
+
+        .text-link {
+            display: inline-block;
+            margin-top: 8px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .text-link:hover {
+            text-decoration: underline;
+        }
+
+        .steps {
+            counter-reset: step;
+        }
+
+        .step {
+            position: relative;
+            padding-top: 68px;
+        }
+
+        .step::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            top: 22px;
+            left: 27px;
+            width: 32px;
+            height: 32px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: var(--teal);
+            color: var(--navy);
+            font-weight: 800;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding: 10px 0 10px 30px;
+            color: var(--muted);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--teal);
+            font-weight: 800;
+        }
+
+        .notice {
+            margin-top: 25px;
+            padding: 18px;
+            border-left: 3px solid var(--teal);
+            background: var(--surface);
+            color: var(--muted);
+            border-radius: 0 8px 8px 0;
+        }
+
+        .faq-item {
+            padding: 23px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-item h3 {
+            margin-bottom: 9px;
+        }
+
+        .faq-item p {
+            color: var(--muted);
+        }
+
+        .cta {
+            text-align: center;
+            padding: 76px 20px;
+            background:
+                radial-gradient(
+                    ellipse at center,
+                    rgba(32, 214, 199, 0.12),
+                    transparent 75%
+                );
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--muted);
+        }
+
+        footer {
+            padding: 38px 0 24px;
+            background: #04121e;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 35px;
+            padding-bottom: 28px;
+        }
+
+        .footer-about p {
+            max-width: 560px;
+            color: var(--muted);
+            margin-top: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            align-items: flex-start;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+        }
+
+        .copyright {
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: #9bb0bd;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        @media (max-width: 760px) {
+            .hero {
+                padding: 65px 0;
+            }
+
+            .section {
+                padding: 55px 0;
+            }
+
+            .grid,
+            .three-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav {
+                justify-content: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+                gap: 12px 17px;
+            }
+
+            .card {
+                padding: 23px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="container">
+<header class="site-header">
+    <div class="container nav">
 
-    <div class="logo">RideLink</div>
+        <a class="brand" href="https://ridelinkstudio.github.io/"
+           aria-label="RideLink homepage">
+            RideLink
+        </a>
 
-    <h1>Your Business, Connected.</h1>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#examples">Examples</a>
+            <a href="https://ridelinkstudio.github.io/ridelink/contact.html">
+                Contact
+            </a>
+        </nav>
 
-    <p>
-        RideLink helps drivers, entrepreneurs, and small businesses
-        build a professional online presence and connect directly
-        with customers.
-    </p>
+    </div>
+</header>
 
-    <a href="https://ridelinkstudio.github.io/ridelink/" class="btn">
-        Explore RideLink
-    </a>
+<main>
 
-    <a href="https://ridelinkstudio.github.io/ridelink/business.html" class="btn">
-        RideLink business
-    </a>
-    
-    <a href="https://ridelinkstudio.github.io/ridelink/about.html" class="btn secondary">
-        About RideLink
-    </a>
+    <!-- HERO -->
 
-     <section class="section">
-    <h2>What is RideLink?</h2>
-    <p>
-        RideLink helps drivers and small businesses build a professional
-        online presence, showcase their services, and connect directly
-        with customers through custom profile pages, WhatsApp integration,
-        QR codes, and digital promotion tools.
-    </p>
-     </section>
+    <section class="hero">
+        <div class="container">
 
-     <section class="section">
-    <h2>Our Services</h2>
+            <p class="eyebrow">Digital presence for everyday businesses</p>
 
-    <div class="service-grid">
+            <h1>
+                Your Business.<br>
+                <span>Connected.</span>
+            </h1>
 
-        <div class="service-card">
-            <h3>Driver Profile Pages</h3>
-            <p>
-                Professional online pages for taxi drivers,
-                airport transfers, logistics operators,
-                and transport businesses.
+            <p class="hero-text">
+                RideLink helps drivers, entrepreneurs and small businesses
+                present their services professionally online. Create a
+                shareable business page, showcase what you offer and make
+                it easier for potential customers to contact you directly.
             </p>
+
+            <div class="button-group">
+                <a class="btn"
+                   href="https://ridelinkstudio.github.io/ridelink/">
+                    Explore RideLink
+                </a>
+
+                <a class="btn btn-outline"
+                   href="https://ridelinkstudio.github.io/ridelink/business.html">
+                    Explore Business Pages
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="section" id="about">
+        <div class="container content">
+
+            <div class="section-heading">
+                <p class="eyebrow">About RideLink</p>
+                <h2>Helping Businesses Be Easier to Find and Contact</h2>
+            </div>
+
+            <p>
+                Many independent drivers and small businesses rely on
+                personal recommendations, phone calls, messaging apps and
+                social media to reach customers. These channels are useful,
+                but business information can become scattered across
+                different conversations, posts and contact lists.
+            </p>
+
+            <p>
+                RideLink provides a simple way to bring important business
+                information together on a dedicated online page. Depending
+                on the service selected, a page can introduce a business,
+                describe its services, display photographs and provide a
+                direct contact option.
+            </p>
+
+            <p>
+                A shareable web address allows the owner to distribute that
+                page through WhatsApp, social media, business cards, flyers
+                and other appropriate channels. A customer can then open
+                the page to learn more about the business before making
+                an enquiry.
+            </p>
+
+            <p>
+                Our approach is practical: give independent professionals
+                and smaller enterprises an accessible way to present their
+                work without requiring them to build and manage an entire
+                website from scratch.
+            </p>
+
+            <div class="notice">
+                RideLink is a digital business-presentation service.
+                A professional page can help communicate what you offer,
+                but it does not guarantee enquiries, sales, bookings
+                or a particular business outcome.
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section class="section section-alt" id="services">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">What We Offer</p>
+                <h2>Digital Tools for Drivers and Small Businesses</h2>
+                <p>
+                    Different businesses have different needs. RideLink
+                    offers digital presentation options designed to help
+                    owners communicate their services and contact details.
+                </p>
+            </div>
+
+            <div class="grid">
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">01</div>
+                    <h3>Driver Profile Pages</h3>
+                    <p>
+                        A dedicated page for taxi drivers, private
+                        chauffeurs, airport transfer operators, school-run
+                        providers and other transport professionals.
+                    </p>
+                    <p>
+                        Depending on the setup, a profile can include the
+                        driver's business name, service area, vehicle
+                        information, available services and contact details.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">02</div>
+                    <h3>Small Business Pages</h3>
+                    <p>
+                        A digital introduction for entrepreneurs, retailers,
+                        service providers and other small businesses.
+                    </p>
+                    <p>
+                        A business page can organize descriptions,
+                        photographs, product or service information and
+                        enquiry details in one shareable location.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">03</div>
+                    <h3>QR Codes and Sharing</h3>
+                    <p>
+                        A QR code can make a business page accessible
+                        when scanned with a compatible phone camera
+                        or QR-scanning application.
+                    </p>
+                    <p>
+                        Owners can use their page address or QR code
+                        on suitable promotional materials, such as
+                        business cards, flyers and vehicle displays.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">04</div>
+                    <h3>Digital Promotional Design</h3>
+                    <p>
+                        Promotional graphics, flyers, business adverts,
+                        product mockups and social media designs can help
+                        businesses communicate their offers visually.
+                    </p>
+                    <p>
+                        Available design services and deliverables depend
+                        on the package agreed with the customer.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- AUDIENCES -->
+
+    <section class="section" id="who-its-for">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">Who Can Use RideLink?</p>
+                <h2>One Simple Idea, Different Business Needs</h2>
+                <p>
+                    RideLink is designed for people who want a clear,
+                    shareable way to introduce their work and services.
+                </p>
+            </div>
+
+            <div class="grid three-grid">
+
+                <article class="card">
+                    <h3>Transport Professionals</h3>
+                    <p>
+                        Independent drivers and transport operators can
+                        explain their services, identify their operating
+                        areas and share relevant vehicle and contact
+                        information with prospective customers.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Entrepreneurs and Retailers</h3>
+                    <p>
+                        Small business owners can introduce their businesses,
+                        describe what they sell or provide, and direct
+                        interested customers to their preferred contact
+                        channel.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Service Providers</h3>
+                    <p>
+                        Mechanics, laundry operators, installers, consultants
+                        and other service providers can use a business page
+                        to explain their services and display relevant
+                        examples of their work.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section class="section section-alt" id="how-it-works">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">The Process</p>
+                <h2>How a RideLink Page Works</h2>
+                <p>
+                    The goal is to make business information easier
+                    to organize, share and access.
+                </p>
+            </div>
+
+            <div class="grid three-grid steps">
+
+                <article class="card step">
+                    <h3>Share Your Information</h3>
+                    <p>
+                        Tell RideLink about your business, the services
+                        you provide and the contact details you want
+                        customers to use. Provide relevant photographs
+                        and other materials for your chosen package.
+                    </p>
+                </article>
+
+                <article class="card step">
+                    <h3>Build Your Page</h3>
+                    <p>
+                        Your business information is arranged into a
+                        dedicated digital page. The layout and features
+                        depend on the service selected and the information
+                        supplied.
+                    </p>
+                </article>
+
+                <article class="card step">
+                    <h3>Share With Customers</h3>
+                    <p>
+                        Once your page is ready and approved by you,
+                        share its address through your existing
+                        communication channels. Interested visitors
+                        can open the page and contact you directly.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="content notice">
+                Before ordering, confirm the package price, included
+                features, delivery timeframe, hosting arrangements and
+                any ongoing requirements with RideLink.
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- BENEFITS -->
+
+    <section class="section" id="benefits">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">Practical Advantages</p>
+                <h2>Why Use a Dedicated Business Page?</h2>
+                <p>
+                    A business page is useful when it solves a real
+                    communication problem for the owner and their customers.
+                </p>
+            </div>
+
+            <div class="grid">
+
+                <article class="card">
+                    <h3>Organized Information</h3>
+                    <p>
+                        Put important business details in one place rather
+                        than repeatedly typing the same introduction
+                        into different conversations.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>A Shareable Web Address</h3>
+                    <p>
+                        Use one page address when introducing your business
+                        to a prospective customer, referral partner
+                        or interested contact.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Direct Communication</h3>
+                    <p>
+                        A WhatsApp contact link, when included, allows
+                        visitors to start an enquiry through WhatsApp.
+                        Visitors still choose whether to send a message.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Mobile-Friendly Presentation</h3>
+                    <p>
+                        Pages are designed to present business information
+                        in a layout suitable for viewing on smartphones
+                        and other modern devices.
+                    </p>
+                </article>
+
+            </div>
+
+            <ul class="feature-list content">
+                <li>Business-specific information and presentation.</li>
+                <li>Service descriptions and relevant photographs.</li>
+                <li>Shareable links and optional QR-code integration.</li>
+                <li>Contact options based on the selected page setup.</li>
+                <li>Promotional design services available separately where offered.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- EXAMPLES -->
+
+    <section class="section section-alt" id="examples">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">Explore Examples</p>
+                <h2>See How Business Information Can Be Presented</h2>
+                <p>
+                    Explore these demonstration pages to understand
+                    how RideLink can organize a business introduction,
+                    services and contact information.
+                </p>
+            </div>
+
+            <div class="grid">
+
+                <article class="card">
+                    <h3>Victor Express Cabs</h3>
+                    <p>
+                        Explore a transport-business profile showing how
+                        a driver or operator can present a business name,
+                        vehicle information, transport services and
+                        booking contact details.
+                    </p>
+                    <a class="text-link"
+                       href="https://ridelinkstudio.github.io/ridelink-victor/">
+                        View Driver Profile →
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>Business Showcase</h3>
+                    <p>
+                        Explore examples of business presentation pages
+                        designed to organize business information and
+                        introduce different products or services.
+                    </p>
+                    <a class="text-link"
+                       href="https://ridelinkstudio.github.io/ridelink/business.html">
+                        View Business Examples →
+                    </a>
+                </article>
+
+            </div>
+
+            <p class="content notice">
+                These examples illustrate page presentation and features.
+                Details shown on a demonstration page should not be
+                interpreted as independent verification of a business
+                or a guarantee of commercial results.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+
+    <section class="section" id="faq">
+        <div class="container content">
+
+            <div class="section-heading">
+                <p class="eyebrow">Common Questions</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>
+                    Here are some basic points to understand before
+                    deciding whether a RideLink page is suitable for you.
+                </p>
+            </div>
+
+            <article class="faq-item">
+                <h3>What exactly is RideLink?</h3>
+                <p>
+                    RideLink is a digital business-presentation service
+                    that helps drivers, entrepreneurs and small businesses
+                    create dedicated online pages containing information
+                    about their services and ways to make contact.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Do I need to know how to code?</h3>
+                <p>
+                    No coding knowledge is required from the customer
+                    when ordering a page-creation service. RideLink
+                    handles the page setup according to the agreed
+                    requirements.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>How can I share my page?</h3>
+                <p>
+                    You can share your page address through messaging
+                    applications, social media, email and other
+                    appropriate communication channels. A QR code
+                    may also be available as part of your selected setup.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Will a RideLink page guarantee more customers?</h3>
+                <p>
+                    No. A page provides a place to present your business
+                    information, but enquiries depend on many factors,
+                    including your services, pricing, reputation,
+                    audience and promotional activities.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>How much does a RideLink page cost?</h3>
+                <p>
+                    Pricing depends on the service and package selected.
+                    Contact RideLink to confirm the current price,
+                    included features and any additional costs before
+                    placing an order.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Can I request changes to my page?</h3>
+                <p>
+                    Discuss your required changes with RideLink before
+                    ordering. The available customization and revision
+                    arrangements depend on the package agreed upon.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>How do I contact RideLink?</h3>
+                <p>
+                    You can use the contact link below to start a
+                    WhatsApp conversation and ask about available
+                    services, pricing and setup requirements.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="cta" id="contact">
+        <div class="container">
+
+            <p class="eyebrow">Take the Next Step</p>
+
+            <h2>Give Your Business a Clearer Online Presence</h2>
+
+            <p>
+                Whether you provide transport, sell products or offer
+                professional services, RideLink can help you organize
+                your business information into a page that is easy
+                to share with potential customers.
+            </p>
+
+            <div class="button-group">
+                <a class="btn"
+                   href="https://wa.me/2347036732460?text=Hello%20RideLink%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services.">
+                    Contact RideLink on WhatsApp
+                </a>
+
+                <a class="btn btn-outline"
+                   href="https://ridelinkstudio.github.io/ridelink/business.html">
+                    Explore Business Pages
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+                <a class="brand"
+                   href="https://ridelinkstudio.github.io/">
+                    RideLink
+                </a>
+
+                <p>
+                    RideLink helps drivers, entrepreneurs and small
+                    businesses present their services professionally
+                    online and provide customers with a convenient
+                    way to access business information.
+                </p>
+            </div>
+
+            <div>
+                <h3>Website Information</h3>
+
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="https://ridelinkstudio.github.io/ridelink/about.html">
+                        About RideLink
+                    </a>
+
+                    <a href="https://ridelinkstudio.github.io/ridelink/contact.html">
+                        Contact
+                    </a>
+
+                    <a href="https://ridelinkstudio.github.io/ridelink/privacy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="https://ridelinkstudio.github.io/ridelink/business.html">
+                        Business Pages
+                    </a>
+                </nav>
+            </div>
+
         </div>
 
-        <div class="service-card">
-            <h3>Business Pages</h3>
+        <div class="copyright">
             <p>
-                Showcase your products and services with
-                a professional online presence.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>QR Codes</h3>
-            <p>
-                Share your profile quickly using custom QR codes
-                on flyers, cards, and vehicles.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>AI-Powered Promotion</h3>
-            <p>
-                Promotional graphics, flyers, adverts,
-                product images, and social media content.
+                &copy; 2026 RideLink. All rights reserved.
+                Digital business presentation for drivers
+                and small businesses.
             </p>
         </div>
 
     </div>
-     </section>
-
-     <section class="section">
-    <h2>Why Choose RideLink?</h2>
-
-    <ul>
-        <li>Affordable setup</li>
-        <li>Mobile-friendly pages</li>
-        <li>Direct WhatsApp contact</li>
-        <li>Professional presentation</li>
-        <li>Hosting included</li>
-        <li>Fast setup process</li>
-    </ul>
-     </section>
-
-     <section class="section">
-    <h2>Featured Examples</h2>
-
-    <p>
-        Explore sample RideLink pages created for drivers and businesses.
-    </p>
-
-    <a href="https://ridelinkstudio.github.io/ridelink-victor/">
-        Victor Express Cabs
-    </a>
-
-    <br><br>
-
-    <a href="https://ridelinkstudio.github.io/ridelink/business.html">
-        Business Showcase Examples
-    </a>
-     </section>
-
-     <section class="section">
-    <h2>Ready to Get Started?</h2>
-
-    <p>
-        Whether you're a driver, entrepreneur, or growing business,
-        RideLink can help you build a professional online presence.
-    </p>
-
-    <a href="https://wa.me/2347036732460?text=Hello%20RideLink%2C%20I%20would%20like%20to%20learn%20more."
-       class="btn">
-       Contact RideLink
-    </a>
-     </section>
-     
-    <footer>
-        <p>
-            &copy; 2026 RideLink.
-             <a href="https://ridelinkstudio.github.io/ridelink/about.html">
-                  About</a> |
-            <a href="https://ridelinkstudio.github.io/ridelink/privacy.html">
-                Privacy Policy
-            </a>
-            |
-            <a href="https://ridelinkstudio.github.io/ridelink/contact.html">
-                Contact
-            </a>
-        </p>
-    </footer>
-
-</div>
+</footer>
 
 </body>
 </html>
